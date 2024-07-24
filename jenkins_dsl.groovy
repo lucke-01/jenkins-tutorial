@@ -14,8 +14,7 @@ job('Job Created FROM "Job DSL creator"') {
     }
     wrappers {
         credentialsBinding {
-            file('JIRA_CREDENTIALS', 'JIRA_CREDENTIALS')
-            usernamePassword('USER_PASS_JIRA_USER', 'USER_PASS_JIRA_TOKEN')
+            usernamePassword('USER_PASS_JIRA_USER', 'USER_PASS_JIRA_TOKEN', 'JIRA_CREDENTIALS')
         }
     }
     steps {
