@@ -13,6 +13,6 @@ job('Job Created FROM "Job DSL creator"') {
         scm('*/5 * * * *')
     }
     steps {
-        shell('./jenkins-101-master/dsl_scripts/hello_world.sh')
+        shell('./dsl_scripts/hello_world.sh')
     }
 }
