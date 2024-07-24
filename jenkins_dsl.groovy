@@ -1,4 +1,5 @@
-job('jenkins DSL Job') {
+//here we can create jira jobs as many as we want using job keyword
+job('Job Created FROM "Job DSL creator"') {
     description("test")
     scm {
         git {
@@ -12,6 +13,6 @@ job('jenkins DSL Job') {
         scm('*/5 * * * *')
     }
     steps {
-        shell('./jenkins-101-master/dsl_scripts/hello_world9.sh')
+        shell('./jenkins-101-master/dsl_scripts/hello_world.sh')
     }
 }
