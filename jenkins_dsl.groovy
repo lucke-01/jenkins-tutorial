@@ -12,6 +12,6 @@ job('jenkins DSL Job') {
         scm('*/5 * * * *')
     }
     steps {
-        shell('./jenkins-101-master/dsl_scripts/hello_world.sh')
+        shell('./jenkins-101-master/dsl_scripts/hello_world9.sh')
     }
 }
