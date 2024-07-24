@@ -67,3 +67,10 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+
+# JIRA to integrate with jenkins
+
+## Instalation
+```
+docker run -d -p 9999:8080 --network jenkins atlassian/jira-software:latest
+```

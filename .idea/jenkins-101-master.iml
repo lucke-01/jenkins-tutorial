@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="groovy-4.0.14" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="16772d34-0a18-4e96-9250-c17a96ecfcd8" />
