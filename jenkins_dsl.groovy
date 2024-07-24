@@ -10,11 +10,11 @@ job('Job Created FROM "Job DSL creator"') {
         }
     }
     triggers {
-        scm('*/20 * * * *')
+        scm('*/40 * * * *')
     }
     wrappers {
         credentialsBinding {
-            file('JIRA_CREDENTIALS', 'keystore.jks')
+            file('JIRA_CREDENTIALS', 'JIRA_CREDENTIALS')
             usernamePassword('USER_PASS_JIRA_USER', 'USER_PASS_JIRA_TOKEN')
         }
     }
