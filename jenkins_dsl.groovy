@@ -13,6 +13,10 @@ job('Job Created FROM "Job DSL creator"') {
         scm('*/5 * * * *')
     }
     steps {
-        shell('./dsl_scripts/hello_world.sh')
+        shell('''
+            chmod 777 ./dsl_scripts/hello_world.sh
+            ./dsl_scripts/hello_world.sh
+        '''''
+        )
     }
 }
