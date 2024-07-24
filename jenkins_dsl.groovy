@@ -10,7 +10,13 @@ job('Job Created FROM "Job DSL creator"') {
         }
     }
     triggers {
-        scm('*/5 * * * *')
+        scm('*/20 * * * *')
+    }
+    wrappers {
+        credentialsBinding {
+            file('JIRA_CREDENTIALS', 'keystore.jks')
+            usernamePassword('USER_PASS_JIRA_USER', 'USER_PASS_JIRA_TOKEN')
+        }
     }
     steps {
         shell('chmod 777 ./dsl_scripts/hello_world.sh')
