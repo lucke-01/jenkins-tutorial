@@ -1,16 +1,11 @@
 job('jenkins DSL Job') {
-    description("")
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url("https://github.com/lucke-01/jenkins-tutorial.git")
-                    }
-                    branch('*/master')
-                }
+    description("test")
+    scm {
+        git {
+            remote {
+                url("https://github.com/lucke-01/jenkins-tutorial.git")
             }
-            lightweight()
+            branch('*/master')
         }
     }
     triggers {
